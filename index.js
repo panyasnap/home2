@@ -13,7 +13,7 @@ const game = () => {
         user_number = parseInt(user_number)
         if (user_number === monet) {
             console.log(`Правильный ответ "${monet}"!!!`)
-            let logs = `пользователь ввел ${monet} и победил!\n`
+            let logs = `пользователь ввел ${user_number} и победил!\n`
             fs.appendFile('output.txt', logs, (err) => {
                 if (err) throw Error(err)
                 console.log('ok')
@@ -21,7 +21,7 @@ const game = () => {
             again()
         } else {
             console.log(`Вы не угадали, попробуйте еще раз\n`)
-            let logs = `пользователь ввел ${monet} и проиграл! \n`
+            let logs = `пользователь ввел ${user_number} и проиграл! \n`
             fs.appendFile('output.txt', logs, (err) => {
                 if (err) throw Error(err)
                 console.log('ok')
