@@ -20,5 +20,4 @@ fs.readFile("output.txt", "utf8", (err, data) => {
     let pocent = lose + win
     let lose_pros = lose / pocent * 100
     let win_pros = win / pocent * 100
-    console.log(`всего пользователей ${count_game}, всего матчей ${pocent}, побед ${win}, поражений ${lose}, процентное соотношение проигрыш ${lose_pros}%, выигрыш ${win_pros}%`)
-});
+    console.log(`всего пользователей ${count_game}, всего матчей ${pocent}, побед ${win}, поражений ${lose}, процентное соотношение проигрыш ${lose_pros.toFixed(2)}%, выигрыш ${win_pros.toFixed(2)}%`)
